@@ -1,0 +1,18 @@
+float a;
+int b;
+a = (10.44*356+1.28) / 2 + 1024 * 1.6
+c = 6;
+b = a * 2 - a/2;
+float e;
+int f;
+f = 0;
+e = f;
+e = k*5;
+int 9g;
+int p;
+int h;
+h = 1/0;
+p = 1/f.
+write(j);
+write(b);
+write(a);
