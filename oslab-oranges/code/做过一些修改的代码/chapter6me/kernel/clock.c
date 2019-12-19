@@ -32,7 +32,7 @@ PUBLIC void clock_handler(int irq)
 	}
 */
 	if(p_proc_ready->ticks<1){   /*程序执行完毕，设置为第三队列执行完毕。这样方便后续处理。*/
-		p_proc_ready->tflag=3;	/*这里用<1不用=0是因为可能因为中断重入0--
+		p_proc_ready->tflag=3;	/*这里用<1不用=0是因为可能因为中断重入0--*/
 		p_proc_ready->cnt=15;
 	}
 	if(p_proc_ready->tflag==1)

@@ -40,13 +40,20 @@ PUBLIC void schedule()
 			p_proc_ready=proc_table;
 	}while(p_proc_ready->ticks<1);
 	}
-	else{
-	for (p = proc_table; p < proc_table+NR_TASKS; p++) {
-			if (p->tflag < smallest_tflag) {
+	else{					//否则在进程表中寻找所在队列优先级最高的，先来的进程
+	int jk=0;
+	p=p_proc_ready;				//从当前ready的下一位开始遍历数组;
+	do{							// 这样是为了实现单个队列的先来先服务
+	jk++;
+	p++;
+	if(p>=proc_table+NR_TASKS)
+			p=proc_table;
+	if (p->tflag < smallest_tflag) {                
 				smallest_tflag = p->tflag;
 				p_proc_ready = p;
 			}
-		}
+	
+	}while(jk<=5);
 	}
 	
 	if(complish==6)  /*全部完成，重新初始化*/
@@ -57,22 +64,7 @@ PUBLIC void schedule()
 			}
 		p_proc_ready=proc_table;
 	}
-/*
-	while (!greatest_ticks) {
-		for (p = proc_table; p < proc_table+NR_TASKS; p++) {
-			if (p->ticks > greatest_ticks) {
-				greatest_ticks = p->ticks;
-				p_proc_ready = p;
-			}
-		}
 
-		if (!greatest_ticks) {
-			for (p = proc_table; p < proc_table+NR_TASKS; p++) {
-				p->ticks = p->priority;
-			}
-		}
-	}
-*/
 }
 
 /*======================================================================*
