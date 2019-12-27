@@ -1,0 +1,12 @@
+obj-m := hello.o
+PWD := $(shell pwd)
+KVER := $(shell uname -r)
+KDIR :=/lib/modules/$(KVER)/build/
+
+all:
+	$(MAKE) -C $(KDIR) M=$(PWD)
+
+clean:
+	rm -rf *.o *.mod.c *.mod.o *.ko *.symvers *.order *.a
+
+
