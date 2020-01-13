@@ -1,6 +1,28 @@
 # subjects
-OwO
+OwO  Course codes 
 
 # including
 
-C++,software security,principle of compiler,cryptography,oslab
+## Database
+
+Library manage system
+
+## C++
+
+## software security
+
+simple Trojan
+
+## principle of compiler
+
+calculator
+
+## cryptography
+
+True random number generator
+
+## oslab
+
+oranges os
+
+
