@@ -21,8 +21,11 @@ calculator
 
 True random number generator
 
-## oslab
+## oslab 
 
-oranges os
+OS lab codes.  oranges os
 
+## OS
+
+OS codes
 
