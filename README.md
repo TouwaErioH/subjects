@@ -1,5 +1,5 @@
 # subjects
-OwO  Course codes 
+Course codes :software security,oslab,cryptography,principle of compiler...
 
 # including
 
