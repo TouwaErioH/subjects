@@ -1,5 +1,5 @@
 # subjects
-Course codes :software security,oslab,cryptography,principle of compiler...
+Codes and programs of my courses: software security,oslab,cryptography,principle of compiler...
 
 # including
 
